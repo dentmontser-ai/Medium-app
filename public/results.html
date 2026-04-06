@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>النتائج - MedSim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container results-container">
+        <header>
+            <h1>📊 نتيجة الاختبار</h1>
+        </header>
+        <main>
+            <!-- ملخص النتيجة -->
+            <div id="result-summary-card" class="card result-summary">
+                <h2 id="result-message">جاري حساب النتيجة...</h2>
+                <p id="score-text" class="score">-- / --</p>
+                <div class="score-percentage" id="score-percentage"></div>
+            </div>
+
+            <!-- مراجعة الأسئلة -->
+            <div class="card review-section">
+                <h3>📝 مراجعة الإجابات</h3>
+                <div id="review-container">
+                    <!-- الأسئلة المصححة ستظهر هنا -->
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="index.html" class="btn-primary">🔄 إنشاء نموذج جديد</a>
+                <button onclick="window.print()" class="btn-secondary">🖨️ طباعة النتائج</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

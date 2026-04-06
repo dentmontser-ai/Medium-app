@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاختبار - MedSim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container exam-container">
+        <header class="exam-header">
+            <h2 id="subject-title">جاري تحميل النموذج...</h2>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress-bar" class="progress"></div>
+                </div>
+                <span id="progress-text">0 / 0</span>
+            </div>
+        </header>
+        <main>
+            <div class="card question-card">
+                <div class="question-content">
+                    <p id="question-text" class="question-text">جاري تحميل السؤال...</p>
+                    <div id="options-container" class="options">
+                        <!-- سيتم ملء الخيارات هنا بواسطة JavaScript -->
+                    </div>
+                </div>
+                <div class="navigation-buttons">
+                    <button id="prev-btn" class="btn-secondary">⬅️ السابق</button>
+                    <button id="next-btn" class="btn-primary">التالي ➡️</button>
+                </div>
+            </div>
+            <button id="finish-btn" class="btn-finish">✅ إنهاء ومراجعة النتيجة</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
